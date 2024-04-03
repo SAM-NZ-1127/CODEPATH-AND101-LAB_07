@@ -10,22 +10,45 @@
         android:id="@+id/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/homemade_apple"
         android:text="CodeZen"
         android:textAlignment="center"
+        android:textColor="#EF476F"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/heading"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        android:scaleType="centerInside"
+        android:scaleX="10.2"
+        android:scaleY="5.1"
+        app:srcCompat="@mipmap/zen_foreground" />
 
     <TextView
         android:id="@+id/mainQuote"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="A quote in 20sp and #073b4c with 8dp padding.\n\n“Rest and be kind, you don’t have to prove anything.”\n – Jack Kerouac"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/amiko"
+        android:padding="8dp"
+        android:text="@string/main_quote"
         android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Quote"
+        android:textColor="#073B4C"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/banner"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/banner"
         app:layout_constraintTop_toBottomOf="@+id/banner" />
 
@@ -33,20 +56,17 @@
         android:id="@+id/secondQuote"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="“There are only two ways to live your life. One is as if nothing is a miracle. The other is as if everything is a miracle.”\n – Albert Einstein"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="224dp"
+        android:fontFamily="@font/homemade_apple"
+        android:text="@string/second_quote"
         android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Quote"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/mainQuote"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/mainQuote"
-        app:layout_constraintTop_toBottomOf="@+id/mainQuote" />
+        app:layout_constraintTop_toBottomOf="@+id/mainQuote"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/banner"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/heading"
-        app:layout_constraintStart_toStartOf="@+id/heading"
-        app:layout_constraintTop_toBottomOf="@+id/heading"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
 </androidx.constraintlayout.widget.ConstraintLayout>

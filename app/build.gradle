@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.codepath.codezen'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.codepath.codezen"
-        minSdk 21
-        targetSdk 32
+        minSdk 24
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
