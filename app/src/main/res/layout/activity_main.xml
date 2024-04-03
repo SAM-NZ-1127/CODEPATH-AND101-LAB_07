@@ -33,8 +33,8 @@
         app:layout_constraintStart_toStartOf="@+id/heading"
         app:layout_constraintTop_toBottomOf="@+id/heading"
         android:scaleType="centerInside"
-        android:scaleX="10.2"
-        android:scaleY="5.1"
+        android:scaleX="10"
+        android:scaleY="5"
         app:srcCompat="@mipmap/zen_foreground" />
 
     <TextView
